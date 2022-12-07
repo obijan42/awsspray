@@ -809,6 +809,6 @@ def master_run_all(session, accountslist):
     if not accountslist:
         raise Exception('Missing account list')
 
-    master_config_enable(session, accountslist)
+    # master_config_enable(session, accountslist)
     # master_gd_enable(session, accountslist)
     # master_sh_enable(session, accountslist)
