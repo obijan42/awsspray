@@ -97,12 +97,12 @@ def run_per_region(myregion,ses,act_list):
 
     s.master_run_all(mysession, act_list)
 
-    all_accounts_runner(mysession, s.child_enable_config, act_list)
 
     # all_accounts_runner(mysession, s.child_gd_acceptinvite, 'gda_' + myregion)
     # all_accounts_runner(mysession, s.child_sh_acceptinvite, 'sha_' + myregion)
-    all_accounts_runner(
-        mysession, s.child_config_acceptinvite, act_list)
+    # all_accounts_runner(mysession, s.child_enable_config, act_list)
+
+    all_accounts_runner(mysession, s.child_config_acceptinvite, act_list)
 
     # all_accounts_runner(mysession, s.child_stacksetrolefix, 'stackfix')
     # all_accounts_runner(mysession, s.child_fixs3public, 's3pubblock')

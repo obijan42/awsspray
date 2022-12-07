@@ -83,7 +83,7 @@ def child_enable_config(ses):
     if not res:
         return False
 
-    print(f"Config: {res['name']} {res['roleARN']} ")
+    print(f"Config: Recorder: {res['name']} Role: {res['roleARN']} ")
     return True
 
 
