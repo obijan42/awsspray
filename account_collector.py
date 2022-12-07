@@ -82,7 +82,7 @@ def refresh_accounts_db(session, ou):
 def run_all_regions(ses):
     myacts=get_accounts_all(ses)
     print(f"DEBUG: Accounts: {myacts}")
-    for region in ['us-west-2', 'us-east-1','us-west-1', 'us-east-2', 'eu-central-1']:
+    for region in ['us-west-2', 'us-east-1','us-west-1', 'us-east-2', 'eu-central-1', 'eu-west-1']:
         run_per_region(region,ses,myacts)
 
 
